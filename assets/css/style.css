@@ -10,6 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
+  font-family: "Open Sans", sans-serif;
   color: #444444;
 }
 
@@ -23,6 +24,14 @@ a:hover {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
 
 #main {
   margin-top: 50px;
@@ -412,24 +421,13 @@ a:hover {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../LINE_ALBUM_修片中(後續逐日補上_231127_5.jpg") top right no-repeat;
+  background: url("../img/hero-bg.jpg") top right;
   background-size: cover;
-  position: relative;
 }
 
 #hero .container {
   padding-top: 70px;
   position: relative;
-}
-
-#hero:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 @media (max-width: 992px) {
@@ -447,7 +445,7 @@ a:hover {
 }
 
 #hero h2 {
-  color: #222222;
+  color: #6f6f6f;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
@@ -543,7 +541,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../LINE_ALBUM_修片中(後續逐日補上_231127_5.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg-1.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -611,7 +609,8 @@ section {
 }
 
 .about .content ul i {
-  font-size: 28px;
+  font-size: 20px;
+  padding-right: 2px;
   color: #34b7a7;
 }
 
@@ -955,8 +954,6 @@ section {
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
 }
 
 .portfolio #portfolio-flters li {
@@ -970,6 +967,7 @@ section {
   color: #444444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 50px;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1071,11 +1069,11 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 0;
 }
 
 .portfolio-details .portfolio-details-slider img {
-  width: 80%;
+  width: 100%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
