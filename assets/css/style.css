@@ -412,13 +412,24 @@ a:hover {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../../LINE_ALBUM_修片中(後續逐日補上_231127_5.jpg") top right ;
+  background: url("../LINE_ALBUM_修片中(後續逐日補上_231127_5.jpg") top right no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 #hero .container {
   padding-top: 70px;
   position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (max-width: 992px) {
@@ -432,11 +443,11 @@ a:hover {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #FFFFFF;
+  color: #222222;
 }
 
 #hero h2 {
-  color: #FFFFFF;
+  color: #222222;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
@@ -944,6 +955,8 @@ section {
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
 }
 
 .portfolio #portfolio-flters li {
@@ -957,7 +970,6 @@ section {
   color: #444444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
-  border-radius: 50px;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1059,7 +1071,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 0;
+  padding-top: 40px;
 }
 
 .portfolio-details .portfolio-details-slider img {
