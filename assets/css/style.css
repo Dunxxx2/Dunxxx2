@@ -411,9 +411,9 @@ a:hover {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   background: url("../../CIMG3681.JPG") top right;
-  background-size: cover;
+  background-size: contain;
 }
 
 #hero .container {
